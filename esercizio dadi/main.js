@@ -1,17 +1,17 @@
-function getRandomIntInclusive() {
-    min = Math.ceil(1);
-    max = Math.floor(6);
+function random1(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
     return Math.floor(Math.random() * 6) + 1;
 }
-let human = getRandomIntInclusive(1, 6)
+let human = random1(1, 6)
 console.log(human)
 
-function getRandomIntInclusive() {
-    min = Math.ceil(1);
-    max = Math.floor(6);
+function random2(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
     return Math.floor(Math.random() * 6) + 1;
 }
-let computer = getRandomIntInclusive(1, 6)
+let computer = random2(1, 6)
 console.log(computer)
 
 if (human > computer) {
